@@ -19,3 +19,5 @@ except openai.error.AuthenticationError:
     print("FAIL: Authentication error! Invalid or missing API key.")
 except Exception as e:
     print(f"Other error: {e}")
+if __name__ == "__main__":
+    app.run(port=5000, debug=True)
